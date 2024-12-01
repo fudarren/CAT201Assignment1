@@ -2,13 +2,13 @@
 
 # Members
 
-Gordon Chai Ming Xun \n
+Gordon Chai Ming Xun <br>
 Matric Num: 22305460
 
-Darren Fu Hon Meng \n
+Darren Fu Hon Meng <br>
 Matric Num: 22305467
 
-Lee Chin Feng \n
+Lee Chin Feng <br>
 Matric Num: 22305481
 
 # Steps to launch
