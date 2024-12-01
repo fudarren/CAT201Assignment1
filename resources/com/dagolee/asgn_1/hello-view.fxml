@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dagolee.asgn_1.HelloController"
+          alignment="center" hgap="10" vgap="10">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <!-- Column Constraints -->
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES"/>
+        <ColumnConstraints hgrow="SOMETIMES"/>
+        <ColumnConstraints hgrow="SOMETIMES"/>
+        <ColumnConstraints hgrow="SOMETIMES"/>
+        <ColumnConstraints hgrow="SOMETIMES"/>
+    </columnConstraints>
+
+    <!-- Row Constraints -->
+    <rowConstraints>
+        <RowConstraints minHeight="150" prefHeight="300" vgrow="NEVER"/>  <!-- Row for title -->
+        <RowConstraints prefHeight="0" vgrow="NEVER"/>  <!-- Row for spacing -->
+        <RowConstraints vgrow="SOMETIMES"/>  <!-- Row for buttons -->
+        <RowConstraints minHeight="20" prefHeight="50" vgrow="NEVER"/>  <!-- Row for spacing between buttons and image -->
+        <RowConstraints minHeight="300" vgrow="NEVER"/>  <!-- Row for image -->
+        <RowConstraints minHeight="30" vgrow="NEVER"/>  <!-- Row for quote -->
+        <RowConstraints minHeight="150" prefHeight="50" vgrow="NEVER"/>  <!-- Row for 'End Program' button -->
+    </rowConstraints>
+
+    <!-- Title -->
+    <Label text="DaGoLee Library System" style="-fx-font-size: 40px; -fx-text-fill: #86626e; -fx-alignment: center; -fx-font-weight: bolder;"
+           GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="5" GridPane.halignment="CENTER"/>
+
+    <!-- Buttons -->
+    <HBox spacing="35" alignment="center" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.columnSpan="5">
+        <Button fx:id="addButton" onAction="#onAddButtonClick" text=" Add Books"
+                style="-fx-font-family: 'Libre Baskerville'; -fx-padding: 10 20 8 20; -fx-background-color: #FF6F61; -fx-text-fill: #000000; -fx-font-weight: bold;
+                -fx-font-size: 18px; -fx-background-radius: 15; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 0, 5); -fx-cursor: hand;">
+            <graphic>
+                <ImageView fitHeight="35" fitWidth="35">
+                    <Image url="@icons/add_book.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="searchButton" onAction="#onSearchButtonClick" text=" Search Books"
+                style="-fx-padding: 10 20 8 20; -fx-background-color: #FF6F61; -fx-text-fill: #000000; -fx-font-size: 18px; -fx-font-weight: bold;
+                -fx-background-radius: 15; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 0, 5); -fx-cursor: hand;">
+            <graphic>
+                <ImageView fitHeight="35" fitWidth="35">
+                    <Image url="@icons/search_book.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="borrowButton" onAction="#onBorrowButtonClick" text=" Borrow Books"
+                style="-fx-padding: 10 20 8 20; -fx-background-color: #FF6F61; -fx-text-fill: #000000; -fx-font-size: 18px; -fx-font-weight: bold;
+                -fx-background-radius: 15; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 0, 5); -fx-cursor: hand;">
+            <graphic>
+                <ImageView fitHeight="35" fitWidth="35">
+                    <Image url="@icons/borrow_book.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="displayButton" onAction="#onDisplayButtonClick" text=" Display Books"
+                style="-fx-padding: 10 20 8 20; -fx-background-color: #FF6F61; -fx-text-fill: #000000; -fx-font-size: 18px; -fx-font-weight: bold;
+                -fx-background-radius: 15; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 0, 5); -fx-cursor: hand;">
+            <graphic>
+                <ImageView fitHeight="35" fitWidth="35">
+                    <Image url="@icons/display_book.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="returnButton" onAction="#onReturnButtonClick" text=" Return Books"
+                style="-fx-padding: 10 20 8 20; -fx-background-color: #FF6F61; -fx-text-fill: #000000; -fx-font-size: 18px; -fx-font-weight: bold;
+                -fx-background-radius: 15; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 0, 5); -fx-cursor: hand;">
+            <graphic>
+                <ImageView fitHeight="35" fitWidth="35">
+                    <Image url="@icons/return_book.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+    </HBox>
+
+    <!-- Image and Quote Section -->
+    <ImageView GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.columnSpan="5"
+               GridPane.halignment="CENTER" GridPane.valignment="CENTER"
+               fitWidth="1000" fitHeight="500" preserveRatio="true">
+        <Image url="@images/DaGoLeeLib-01.png"/>
+    </ImageView>
+    <Label text="&quot;Books are a uniquely portable magic.&quot; — Stephen King" GridPane.columnIndex="0" GridPane.rowIndex="5" GridPane.columnSpan="5"
+           style="-fx-font-size: 20px; -fx-text-fill: #333; -fx-alignment: center; -fx-font-weight: bold;"
+           GridPane.halignment="CENTER" GridPane.valignment="TOP"/>
+
+    <!-- End Program Button -->
+    <Button text=" End Program"
+            fx:id="endButton"
+            onAction="#onEndButtonClick"
+            style="-fx-padding: 10 20 8 20; -fx-background-color: #FF6F61; -fx-text-fill: #000000; -fx-font-size: 18px; -fx-font-weight: bold;
+            -fx-background-radius: 15; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 0, 5); -fx-cursor: hand;"
+            GridPane.columnIndex="0" GridPane.rowIndex="6" GridPane.columnSpan="5" GridPane.halignment="CENTER">
+        <graphic>
+            <ImageView fitHeight="35" fitWidth="35">
+                <Image url="@icons/end_program.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+</GridPane>
