@@ -3,13 +3,16 @@
 # Members
 
 Gordon Chai Ming Xun <br>
-Matric Num: 22305460
+Matric Num: 22305460 <br>
+Contributions: JavaFX and GUI design
 
 Darren Fu Hon Meng <br>
-Matric Num: 22305467
+Matric Num: 22305467 <br>
+Contributions: GUI design and Book Class
 
 Lee Chin Feng <br>
-Matric Num: 22305481
+Matric Num: 22305481 <br>
+Contributions: Library Class and Video
 
 # Steps to launch
 1. Create a new JavaFX project in IntelliJ.
