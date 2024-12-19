@@ -5,10 +5,8 @@
 | :-: | :-: | :-: |
 | Darren Fu Hon Meng [@fudarren](https://github.com/fudarren) | 22305467 | Project Manager |
 | Gordon Chai Ming Xun [@ccchaigordon](https://github.com/ccchaigordon) | 22305460 | Member |
-| Wong Mei Zhen [@LimmmYongJun](https://github.com/LimmmYongJun)| 22304225 | Member |
-| Loh Yi Han [@LIMJIALIANG](https://github.com/LIMJIALIANG) | 22303435 | Member |
-
-<br>
+| Wong Mei Zhen [@](https://github.com/)| 22304225 | Member |
+| Loh Yi Han [@](https://github.com/) | 22303435 | Member |
 
 <br>
 
